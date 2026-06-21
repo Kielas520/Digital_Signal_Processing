@@ -1,0 +1,328 @@
+惠州学院期末考试试卷（ A ）卷
+（   2012  ——   2013   学年度第 2 学期）
+考试科目  　　数字信号处理             考试时间                           
+
+试题一二三四五六七八九总分得分
+得分
+评卷人
+一、
+选择题：（每题2分，本大题共16分，单选题）
+
+
+
+1.
+ EMBED Equation.DSMT4  的基本周期是( D )
+(A) 0.125            (B) 0.25           (C) 8            (D) 16
+
+
+2.
+设方波 EMBED Equation.DSMT4  ,则下列不是其傅里叶变换的是( B)
+(A)  EMBED Equation.DSMT4      (B) EMBED Equation.DSMT4       (C) EMBED Equation.DSMT4         (D)  EMBED Equation.DSMT4  
+
+
+3.
+若实信号 EMBED Equation.DSMT4  的频谱为 EMBED Equation.DSMT4  ,则下列说法中正确的是( C )
+(A)  EMBED Equation.DSMT4  的频谱为 EMBED Equation.DSMT4            (B) 频谱 EMBED Equation.DSMT4  的信号为 EMBED Equation.DSMT4  
+(C)  EMBED Equation.DSMT4                  (D)  EMBED Equation.DSMT4  的频谱为 EMBED Equation.DSMT4  
+
+
+4.
+有界输入-有界输出系统称为( B )
+(A)因果系统        (B)稳定系统          (C)可逆系统        (D)线性系统
+
+
+5.
+下列系统(其中y(n)是输出序列，x(n)是输入序列)中______属于线性系统。( C )
+(A) EMBED Equation.DSMT4    (B) EMBED Equation.DSMT4    (C) EMBED Equation.DSMT4     (D) EMBED Equation.DSMT4  
+
+
+6.
+已知 EMBED Equation.DSMT4  ，则下列说法正确的是 ( B )
+(A) 若 EMBED Equation.DSMT4  是实数偶对称函数，则 EMBED Equation.DSMT4  是虚数奇对称函数；
+(B) 若 EMBED Equation.DSMT4  是实数奇对称函数，则 EMBED Equation.DSMT4  是虚数奇对称函数；
+(C) 若 EMBED Equation.DSMT4  是虚数偶对称函数，则 EMBED Equation.DSMT4  是虚数奇对称函数；
+(D) 若 EMBED Equation.DSMT4  是虚数奇对称函数，则 EMBED Equation.DSMT4  是虚数奇对称函数；
+
+
+
+
+
+7.
+如题图所示的滤波器幅频特性曲线，可以确定该滤波器类型为（  C   ）
+
+
+
+
+
+(A)低通滤波器    (B)高通滤波器    (C)带通滤波器    (D)带阻滤波器
+
+
+8.
+在IIR数字滤波器的设计中，用　　　　　　方法只适合于片断常数特性滤波器的设计。（ B  ）
+(A)脉冲响应不变法	(B)双线性变换法	  (C)窗函数法	(D)频率采样法
+
+得分
+评卷人
+二、
+填空题：（每题1分，本大题共20分）
+
+
+1.
+数字频率 EMBED Equation.DSMT4  为模拟频率 EMBED Equation.DSMT4  对   采样频率    的归一化，其值是 离散 （连续还是离散？）。
+
+2.
+ EMBED Equation.3 ，当两者循环卷积长度不小于__6____时，循环卷积完全等于线性卷积。
+
+3.
+DFT是利用 EMBED Equation.DSMT4  的  周期性  和   对称性  两个固有特性来实现FFT算法的。
+
+4.
+按频率抽取基2FFT算法首先将序列x(n) 分成  前N/2个  序列和  后N/2个 序列。
+
+5.
+假设时域采样频率为32kHz，现对输入序列的32点进行DFT运算，此时，DFT输出的各点频率间隔为  1000   Hz。
+
+6.
+如果计算机的计算速度为平均每次复乘需要 EMBED Equation.DSMT4  ，每次复加需要 EMBED Equation.DSMT4  ，则在此计算机上计算210点基2FFT需要  8 级蝶型运算，总的运算时间是  7168  EMBED Equation.DSMT4  。
+
+7.
+如果要用频率采样法设计一FIR数字高通滤波器，采样点数为64，则其 EMBED Equation.DSMT4  函数的幅度谱 EMBED Equation.DSMT4  应满足                 ，相位谱 EMBED Equation.DSMT4  应满足                  。
+
+8.
+利用模拟低通滤波器来设计数字带通滤波器，若 EMBED Equation.DSMT4  和 EMBED Equation.DSMT4  分别表示模拟角频率和数字角频率， EMBED Equation.DSMT4  为带通数字滤波器的中心角频率。在频率映射关系中， EMBED Equation.DSMT4  对应于 EMBED Equation.DSMT4  _2/T*tan( EMBED Equation.DSMT4  /2)__的位置。
+
+9.
+17阶的FIR滤波器如果具有线性的相位： EMBED Equation.3  ，则其单位脉冲响应h(n)必须满足以下关系式： h(n)=h(N-n) ，该滤波器的幅度特性在角频率为________rad（选择： EMBED Equation.3  ；1.5 EMBED Equation.3  ；0.25 EMBED Equation.3  ）处必定为零。
+
+10.
+FIR数字滤波器有  窗函数法 和  频率采样法  两种设计方法，其结构有 直接型  、       
+  级联型   和   线性相位    等形式。
+
+得分
+评卷人
+三、
+计算题：（本大题共7分）
+
+
+
+已知系统的单位脉冲响应为 EMBED Equation.3  ，求：
+（1）系统函数H(Z)；  （3分）
+（2）判断系统是否稳定，是否具有因果性； （2分）
+（3）是IIR还是FIR系统？ （2分）
+H(Z)=16/(Z-2-2-1Z-1)
+|Z|<2,稳定、非因果
+IIR系统
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+得分
+评卷人
+四、
+计算题：（本大题共10分）
+
+
+
+已知 EMBED Equation.DSMT4  ，试求
+(1) EMBED Equation.DSMT4  的5点DFT; （4分）
+(2)若 EMBED Equation.DSMT4  ,求其5点的循环卷积。问几点的循环卷积能代替它们的线性卷积值。（6分）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+得分
+评卷人
+五、
+计算题：（本大题共10分）
+
+
+
+（1）试画出8点的按频率抽取基2 FFT运算流图。（6分）
+（2）32点的按时间抽取基2FFT算法中共有几级蝶形，写出第3级的W因子以及输入序列位序重排后的前4个序列的序号。（4分）
+
+N=2M,32=2M,M=5
+P=J2M-L	0*4, 1*4 ,2*4 ,3*4
+00000  00000    0
+00001  10000   16
+00010  01000    8
+00011  11000   24
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+得分
+评卷人
+六、
+计算题：（本大题共8分）
+
+
+
+试写出一种FFT应用于实序列DFT的应用，并写出推导过程及结果。
+提示：（1）可用两个长度为N的实序列组成一个N点复序列；（2）将一个2N点实序列分解成偶数序列和奇数序列，组成一个N点复序列。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+得分
+评卷人
+七、
+计算题：（本大题共12分）
+
+
+
+
+1、已知二阶归一化低通模拟滤波器的系统函数 EMBED Equation.DSMT4  ，采样间隔为2秒，利用脉冲响应不变法设计IIR低通数字滤波器，其通带3dB边界角频率为2rad/s。求数字滤波器的系统函数H(z) 
+2、已知一阶归一化巴特沃什低通模拟滤波器的系统函数为 EMBED Equation.3  ，运用双线性变换法设计一个一阶的巴特沃什高通数字滤波器，要求3dB处通带边界频率为0.45KHz。采样频率为1.8KHz。求系统函数H(Z)。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+得分
+评卷人
+八、
+画图题：（本大题共6分）
+
+
+
+已知 EMBED Equation.3  ，试画出直接型和级联型系统结构框图。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+得分
+评卷人
+九、
+计算题：（本大题共11分）
+
+
+
+
+运用窗口设计法设计FIR线性相位低通数字滤波器，使其3dB处通带边界角频率为0.3π(rad)，采用汉明窗，滤波器的阶数为31。
+（1）写出滤波器的单位脉冲响应 EMBED Equation.DSMT4  和相位 EMBED Equation.3  的表达式。（7分）
+（2）简述什么是吉布斯现象？（4分）
+说明：汉明窗的表达式为： EMBED Equation.3  
+
+
+
+
+
+
+
+
+
+
+南通大学2007—2008学年 第2学期邓小平理论概论试卷（A）第  PAGE 2 页 共  NUMPAGES 1 页
+
+
+
+
+
+
+						
+
+
+ EMBED Equation.3 \* MERGEFORMAT 
+
+
+……………………………装……………………………订……………………………线………………………………………
+
+学院：                     专业：                 班级：           姓名：             学号：         
+                 
+ 
+  
+
+
+———————————  密  ————————————  封  ——————————  线  ———————————
+
+
+

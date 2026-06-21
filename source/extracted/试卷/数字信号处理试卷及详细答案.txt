@@ -1,0 +1,120 @@
+数字信号处理试卷答案
+完整版
+一、填空题：（每空1分，共18分）
+数字频率 EMBED Equation.3  是模拟频率 EMBED Equation.3  对采样频率 EMBED Equation.3  的归一化，其值是  离散  （连续还是离散？）。
+双边序列 EMBED Equation.3  变换的收敛域形状为  圆环或空集    。
+某序列的 EMBED Equation.3  表达式为 EMBED Equation.3  ，由此可以看出，该序列时域的长度为   N     ，变换后数字频域上相邻两个频率样点之间的间隔是  EMBED Equation.3      。
+线性时不变系统离散时间因果系统的系统函数为 EMBED Equation.3  ，则系统的极点为     EMBED Equation.3       ；系统的稳定性为   不稳定     。系统单位冲激响应 EMBED Equation.3  的初值 EMBED Equation.3  ；终值 EMBED Equation.3      不存在     。
+如果序列 EMBED Equation.3  是一长度为64点的有限长序列 EMBED Equation.3  ，序列 EMBED Equation.3  是一长度为128点的有限长序列 EMBED Equation.3  ，记 EMBED Equation.3  （线性卷积），则 EMBED Equation.3  为 64+128-1＝191点     点的序列，如果采用基 EMBED Equation.3  算法以快速卷积的方式实现线性卷积，则 EMBED Equation.3  的点数至少为  256  点。
+用冲激响应不变法将一模拟滤波器映射为数字滤波器时，模拟频率 EMBED Equation.3  与数字频率 EMBED Equation.3  之间的映射变换关系为 EMBED Equation.3  。用双线性变换法将一模拟滤波器映射为数字滤波器时，模拟频率 EMBED Equation.3  与数字频率 EMBED Equation.3  之间的映射变换关系为 EMBED Equation.3  或 EMBED Equation.3  。
+7、当线性相位 EMBED Equation.3  数字滤波器满足偶对称条件时，其单位冲激响应 EMBED Equation.3  满足的条件为 EMBED Equation.3   ，此时对应系统的频率响应 EMBED Equation.3  ，则其对应的相位函数为 EMBED Equation.3  。
+8、请写出三种常用低通原型模拟滤波器  巴特沃什滤波器  、  切比雪夫滤波器     、 椭圆滤波器    。
+二、判断题（每题2分，共10分）
+模拟信号也可以与数字信号一样在计算机上进行数字信号处理，只要加一道采样的工序就可以了。      抽样，量化，编码                                                      （╳）
+已知某离散时间系统为 EMBED Equation.3  ，则该系统为线性时不变系统。(╳)                                                          
+一个信号序列，如果能做序列的傅里叶变换（ EMBED Equation.3  ），也就能对其做 EMBED Equation.3  变换。（╳）
+用双线性变换法进行设计 EMBED Equation.3  数字滤波器时，预畸并不能消除变换中产生的所有频率点的非线性畸变。                                                        （√）
+阻带最小衰耗取决于窗谱主瓣幅度峰值与第一旁瓣幅度峰值之比。            （╳）
+三、（15分）、已知某离散时间系统的差分方程为
+ EMBED Equation.3  
+系统初始状态为 EMBED Equation.3  ， EMBED Equation.3  ，系统激励为 EMBED Equation.3  ，
+试求：（1）系统函数 EMBED Equation.3  ，系统频率响应 EMBED Equation.3  。
+（2）系统的零输入响应 EMBED Equation.3  、零状态响应 EMBED Equation.3  和全响应 EMBED Equation.3  。
+解：（1）系统函数为 EMBED Equation.3  
+系统频率响应 EMBED Equation.3  
+解一：（2）对差分方程两端同时作z变换得
+ EMBED Equation.3  
+即： EMBED Equation.3  
+上式中，第一项为零输入响应的z域表示式，第二项为零状态响应的z域表示式，将初始状态及激励的z变换 EMBED Equation.3  代入，得零输入响应、零状态响应的z域表示式分别为
+ EMBED Equation.3   
+ EMBED Equation.3  
+将 EMBED Equation.3  展开成部分分式之和，得
+ EMBED Equation.3  
+ EMBED Equation.3  
+即          EMBED Equation.3              EMBED Equation.3  
+对上两式分别取z反变换，得零输入响应、零状态响应分别为
+ EMBED Equation.3  
+ EMBED Equation.3  
+故系统全响应为
+ EMBED Equation.3   EMBED Equation.3   
+解二、（2）系统特征方程为 EMBED Equation.3  ，特征根为： EMBED Equation.3  ， EMBED Equation.3  ；
+故系统零输入响应形式为     EMBED Equation.3  
+将初始条件 EMBED Equation.3  ， EMBED Equation.3  带入上式得
+ EMBED Equation.3         解之得   EMBED Equation.3  ， EMBED Equation.3  ，
+故系统零输入响应为：    EMBED Equation.3         EMBED Equation.3  
+系统零状态响应为  
+ EMBED Equation.3  
+ EMBED Equation.3  
+即      EMBED Equation.3  
+对上式取z反变换，得零状态响应为     EMBED Equation.3  
+故系统全响应为
+ EMBED Equation.3   EMBED Equation.3   
+四、回答以下问题：
+画出按时域抽取 EMBED Equation.3  点基 EMBED Equation.3  的信号流图。
+利用流图计算4点序列 EMBED Equation.3  （ EMBED Equation.3  ）的 EMBED Equation.3  。
+试写出利用 EMBED Equation.3  计算 EMBED Equation.3  的步骤。
+解：（1）
+ EMBED Visio.Drawing.6             EMBED Visio.Drawing.6  
+       4点按时间抽取FFT流图                        加权系数
+   （2）   EMBED Equation.3        EMBED Equation.3  
+ EMBED Equation.3               EMBED Equation.3  
+ EMBED Equation.3           EMBED Equation.3  
+即：              EMBED Equation.3  
+   （3）1）对 EMBED Equation.3  取共轭，得 EMBED Equation.3  ；
+        2）对 EMBED Equation.3  做N点FFT；
+        3）对2）中结果取共轭并除以N。
+
+五、（12分）已知二阶巴特沃斯模拟低通原型滤波器的传递函数为 
+ EMBED Equation.3  
+试用双线性变换法设计一个数字低通滤波器，其3dB截止频率为 EMBED Equation.3  rad，写出数字滤波器的系统函数，并用正准型结构实现之。（要预畸，设 EMBED Equation.3  ）
+解：（1）预畸
+ EMBED Equation.3  
+   （2）反归一划
+ EMBED Equation.3  
+（3） 双线性变换得数字滤波器
+ EMBED Equation.3  
+ EMBED Equation.3  
+（4）用正准型结构实现
+ EMBED Visio.Drawing.6  
+六、（12分）设有一 EMBED Equation.3  数字滤波器，其单位冲激响应 EMBED Equation.3  如图1所示：
+ EMBED Visio.Drawing.6  
+图1
+试求：（1）该系统的频率响应 EMBED Equation.3  ；
+（2）如果记 EMBED Equation.3  ，其中， EMBED Equation.3  为幅度函数（可以取负值）， EMBED Equation.3  为相位函数，试求 EMBED Equation.3  与 EMBED Equation.3  ；
+（3）判断该线性相位 EMBED Equation.3  系统是何种类型的数字滤波器？（低通、高通、带通、带阻），说明你的判断依据。
+（4）画出该 EMBED Equation.3  系统的线性相位型网络结构流图。
+解：（1） EMBED Equation.3  
+ EMBED Equation.3  
+ EMBED Equation.3  
+ EMBED Equation.3  
+（2） EMBED Equation.3  
+ EMBED Equation.3  ，  EMBED Equation.3  
+（3） EMBED Equation.3  
+故  当 EMBED Equation.3  时，有 EMBED Equation.3  ，即 EMBED Equation.3  关于0点奇对称， EMBED Equation.3  ；
+当 EMBED Equation.3  时，有 EMBED Equation.3  ，即 EMBED Equation.3  关于 EMBED Equation.3  点奇对称， EMBED Equation.3  
+上述条件说明，该滤波器为一个线性相位带通滤波器。
+（4）线性相位结构流图
+ EMBED Visio.Drawing.6  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
